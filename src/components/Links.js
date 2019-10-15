@@ -1,9 +1,8 @@
 
 import React from "react";
 import { githubIcon, gmailIcon, linkedinIcon } from "../content/images";
-
 const Links = () => (
-  <div className="Links">
+  <div className="icon-link">
     <a
       href="mailto:tonyjiaxiangwang@gmail.com"
       target="_blank"

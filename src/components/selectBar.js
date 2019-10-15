@@ -89,7 +89,6 @@ const CustomAppBar = props => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const theme = useTheme();
-    
     function handleDrawerOpen() {
         setOpen(true);
     }

@@ -7,14 +7,21 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  bottom: 100px;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+
+.icon-link{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .split {
@@ -27,23 +34,35 @@
 }
 
 .left{
+  display: flex;
   position: fixed;
   left: 64px;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
 }
 
 .right {
+  display: flex;
   position: fixed;
   right: 0;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
+}
+
+.text {
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.des { 
+  color: black;
+  text-align: center;
+  font-family: verdana;
+  font-size: 20px;
 }
