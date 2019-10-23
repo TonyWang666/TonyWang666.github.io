@@ -1,7 +1,7 @@
 {
   "name": "tony-personal-website",
   "version": "0.1.0",
-  "homepage": "https://TonyWang666.github.io/TonyWangJX",
+  "homepage": "https://TonyWang666.github.io/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.1",
