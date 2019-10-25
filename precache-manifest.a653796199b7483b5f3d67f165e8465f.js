@@ -37,6 +37,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "d5a700628dd6877ffd5fd3477e897860",
-    "url": "/TonyWangJX/static/media/resume.d5a70062.pdf"
+    "url": "/static/media/resume.d5a70062.pdf"
   }
 ]);
