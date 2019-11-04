@@ -1,3 +1,6 @@
+This website is deployed with the technique of static package. 
+The source is from https://tomoya92.github.io/2019/04/04/deploy-create-react-app-github-pages/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
