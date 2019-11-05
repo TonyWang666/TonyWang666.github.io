@@ -1,27 +1,41 @@
-import React, { Fragment } from "react";
-import { Typography } from "@material-ui/core/";
+import React, { Fragment, Component } from "react";
+import { Typography, Button } from "@material-ui/core/";
 import { Links } from "../components"
-const Projects = () => (
-  <Fragment>
-    <div className="split left">
-      <header className="App-header">
-        <Typography variant="h1">Project List</Typography>
-          <br />
-          <ul>Movie Zone</ul>
-          <ul>Peer Genius</ul>
-          <ul>Predicting Year of Song</ul>
-      </header>
-      <footer> <Links /> </footer>
-    </div>
-    <div className="split right">
-      <h1> Project Description</h1>
-      <p className = "des text">The Movie Zone is a website I made in class 122B. Honestly, it is my child. I spent 3 months on this product with all my passion and tons of "hairs"
-      <br /><br />I used microservice with MySql for its database. There are 4 databases work separately and independently.
-      <br /><br />I implemented the back-end with Java, which is my most proficient language.
-      <br /><br />The front-end I used JavaScript and jQuery!
-      </p>
-    </div>
-  </Fragment>
-);
-
+import {MovieZone, Voluntu, YearOfSong} from "./PastProjects";
+class Projects extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      option: 1,
+    }
+    this.change = this.change.bind(this);
+  }
+  change(x = 0){
+    console.log("Inside change, x is: " + x);
+    this.setState({
+      option : x
+    });
+    console.log("after change, option is: " + this.state.option);
+  }
+  render(){
+    return (
+      <Fragment>
+        <div className="split left">
+          <header className="App-header">
+            <Typography variant="h1">Project List</Typography>
+              <br />
+              <Button onClick={() => this.change(0)}>Movie Zone</Button>
+              <Button onClick={() => this.change(1)}>Peer Genius</Button>
+              <Button onClick={() => this.change(2)}>Predicting Year of Song</Button>
+          </header>
+          <footer> <Links /> </footer>
+        </div>
+        <div className="split right">
+          {console.log("option here is : " + this.state.option)}
+          { this.state.option === 0 ? <MovieZone/> : this.state.option === 1 ? <Voluntu /> : <YearOfSong />}
+        </div> 
+      </Fragment>
+    )
+  }
+}
 export default Projects;
