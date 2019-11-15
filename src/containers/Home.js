@@ -9,17 +9,19 @@ const Home = () => (
             <Typography variant="h5">
                 <Box>
                     <strong>Welcome to Tony's website!</strong> <br /> <br />
-                    My legal name is Jiaxiang Wang.<br />
-                    I am a full-stack developer with 2 year work experience.
+                    My name is Jiaxiang Wang(Tony).<br />
+                    Currently, I am computer science major student at <strong>University of California, Irvine</strong>. <br />
+                    My expected gradutating time is <strong> June 2020 </strong>. <br />
+                    I have experience both with the <strong>Front-end </strong>and <strong>Back-end</strong> developing.
                 </Box>
                 <br />
                 <Box>
-                    Currently, I am computer science major student at <br /> <strong>University of California, Irvine</strong>. <br />
-                    My expected gradutating time is <strong> June 2020 </strong>.
-                    I have experience both with the <strong>Front-end </strong>and <strong>Back-end</strong> developing.
+                    Below is my work experience: <br />
+                    Front-End Developer, Baidu Inc. Shenzhen, China
+                    <br />
+                    Software Development Intern, Ardent Labs, Irvine, CA
                 </Box>
             </Typography>
-            <br/>
             <footer> <Links /> </footer>
         </div>
         <div className = "split right text">
