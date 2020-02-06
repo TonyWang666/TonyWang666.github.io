@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { HomePicture } from "../content/images";
+import { homePicture } from "../content/images";
 import { Box, Typography } from "@material-ui/core/";
 import { Links } from "../components";
 
@@ -25,7 +25,7 @@ const Home = () => (
             <footer> <Links /> </footer>
         </div>
         <div className = "split right text">
-            <img src = {HomePicture} alt="PictureOfTony" width="500" height="500" />
+            <img src = {homePicture} alt="PictureOfTony" width="700" height="800" />
         </div>
     </Fragment>
 );
