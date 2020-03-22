@@ -101,6 +101,7 @@ const CustomAppBar = props => {
         <div className = {classes.root}>
           <CssBaseline />
           <AppBar
+              style={{ background: '#1e88e5' }}
               position="fixed"
               className={clsx(classes.appBar, {
               [classes.appBarShift]: open

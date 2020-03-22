@@ -67,25 +67,11 @@
   font-size: 20px;
 }
 
-
-.home-parent {
+.back-color {
+  background-color: deepskyblue;
+}
+/* .home-parent {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.homeHead {
-  margin-top: 64px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.intro {
-  margin-left: 50px;
-}
-
-.card {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-
-}
