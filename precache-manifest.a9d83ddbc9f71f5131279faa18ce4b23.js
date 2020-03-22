@@ -1,23 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1124545ed0c8d8293c8f66fa9114d642",
+    "revision": "4a15ac45647c5f655f5e5d016f960f81",
     "url": "/index.html"
   },
   {
-    "revision": "ab73a15647c719dd1f97",
+    "revision": "51f40a701930d489dee7",
     "url": "/static/css/main.c8ba0cef.chunk.css"
   },
   {
-    "revision": "c831bfd7534b7b1272cd",
-    "url": "/static/js/2.60a535bf.chunk.js"
+    "revision": "243fda9d4a61818cf46c",
+    "url": "/static/js/2.920afc0f.chunk.js"
   },
   {
-    "revision": "ab73a15647c719dd1f97",
-    "url": "/static/js/main.a1957638.chunk.js"
+    "revision": "51f40a701930d489dee7",
+    "url": "/static/js/main.a87cd04e.chunk.js"
   },
   {
     "revision": "fc1d003effa683b4ac9e",
     "url": "/static/js/runtime-main.a4be3630.js"
+  },
+  {
+    "revision": "f636303299f44c35d9a1bc2975304877",
+    "url": "/static/media/De_anza_transcript.f6363032.pdf"
+  },
+  {
+    "revision": "5ab7db372b607b2b91fa23f4b67f22f0",
+    "url": "/static/media/Resume_SE.5ab7db37.pdf"
+  },
+  {
+    "revision": "9ab4b2ec17bc639b47682907451da481",
+    "url": "/static/media/UCI_transcript.9ab4b2ec.pdf"
   },
   {
     "revision": "c78ada969ab69dfb6bb5ae2181274d20",
@@ -44,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/profileImage.e47ead8e.png"
   },
   {
-    "revision": "e98fca66721624620493b20fc7371075",
-    "url": "/static/media/resume.e98fca66.pdf"
+    "revision": "f40d9231d380d9f5923c0d46a0f8c34f",
+    "url": "/static/media/recommendation.f40d9231.pdf"
   }
 ]);
