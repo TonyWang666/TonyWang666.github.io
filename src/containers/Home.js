@@ -4,9 +4,12 @@ import { Avatar, Typography, Card, CardHeader, Divider, CardContent, Chip } from
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import lightBlue from '@material-ui/core/colors/lightBlue';
 import DoneIcon from '@material-ui/icons/Done';
-import BuildIcon from '@material-ui/icons/Build';
-import WbCloudyIcon from '@material-ui/icons/WbCloudy';
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+// import BuildIcon from '@material-ui/icons/Build';
+import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
+// import WbCloudyIcon from '@material-ui/icons/WbCloudy';
+import WbCloudyOutlinedIcon from '@material-ui/icons/WbCloudyOutlined';
+// import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ThumbUpOutlinedIcon from '@material-ui/icons/ThumbUpOutlined';
 import { makeStyles } from '@material-ui/core/styles';
 import { Links } from "../components";
 import { Front_End2, Back_End, others } from "../content/images";
@@ -46,8 +49,7 @@ const useStyles = makeStyles(theme => ({
         // margin: '0 100px',
     },
     chip: {
-        margin: '4px 1px',
-        
+        margin: '4px 1px',   
     }
 }));
 
@@ -71,35 +73,60 @@ const Home = (props) => {
     const others_arr = ['1+ Years Work Experience', 'Agile Development', 'Project Management', 'Public Speaking', 'Social Media Marketing', 'Hosting Events', 'Good Communication Skill', 'Strong Sense Of Responsibility']
     return(
         <MuiThemeProvider theme={colortheme}>
-        <div className={classes.homeParent}>
-            <div className={classes.homeHead} >
-                <Avatar src = {profileImage} alt="PictureOfTony" variant='circle' className={classes.small} />
-                    <div className={classes.intro}>
-                        <Typography variant="h5" color='primary'>Hi, this is </Typography>
-                        <Typography variant="h1" color='primary' gutterBottom>Tony Wang</Typography>
-                        <Typography variant="h5" color='primary' gutterBottom>I am a fourth year undergrad at the University Of California, Irvine.</Typography>
-                        <br />
-                        <Typography variant="h5" color='primary' gutterBottom>I am actively looking for full-time software engineer position starting from June 2020.</Typography>
-                        <br />
-                        <Typography variant="h5" color='primary' gutterBottom>Nice to meet you and below are my expertises: </Typography>
-                    </div> 
-            </div>
-            <Divider />
-            <div className={classes.root}> 
-                <Card className={classes.card} style={{marginLeft: '100px'}}>
-                    <CardHeader 
-                        title="Front-End"
-                        titleTypographyProps={{variant:'h5' }}
-                        avatar={
-                            <Avatar alt="Front-End" src={Front_End2} className={classes.avatar}/>
-                        }
-                    />
-                    <CardContent>
-                            {front_end_arr.map((element) =>
-                                <div>
+            <div className={classes.homeParent}>
+                <div className={classes.homeHead} >
+                    <Avatar src = {profileImage} alt="PictureOfTony" variant='circle' className={classes.small} />
+                        <div className={classes.intro}>
+                            <Typography variant="h5" color='primary'>Hi, this is </Typography>
+                            <Typography variant="h1" color='primary' gutterBottom>Tony Wang</Typography>
+                            <Typography variant="h5" color='primary' gutterBottom>I am a fourth year undergrad at the University Of California, Irvine.</Typography>
+                            <br />
+                            <Typography variant="h5" color='primary' gutterBottom>I am actively looking for full-time software engineer position starting from June 2020.</Typography>
+                            <br />
+                            <Typography variant="h5" color='primary' gutterBottom>Nice to meet you and below are my expertises: </Typography>
+                        </div> 
+                </div>
+                <Divider />
+                <div className={classes.root}> 
+                    <Card className={classes.card} style={{marginLeft: '100px'}}>
+                        <CardHeader 
+                            title="Front-End"
+                            titleTypographyProps={{variant:'h5' }}
+                            avatar={
+                                <Avatar alt="Front-End" src={Front_End2} className={classes.avatar}/>
+                            }
+                        />
+                        <CardContent>
+                                {front_end_arr.map((element) =>
+                                    <div>
+                                        <Chip
+                                            className={classes.chip}
+                                            icon={<BuildOutlinedIcon />}
+                                            clickable
+                                            color="secondary"
+                                            label={element}
+                                            onDelete={handleDelete}
+                                            deleteIcon={<DoneIcon />}
+                                            variant='outlined'
+                                        /> 
+                                    </div>
+                                )}
+                        </CardContent>
+                    </Card>
+                    <Card className={classes.card}>
+                        <CardHeader 
+                            title="Back-End"
+                            titleTypographyProps={{variant:'h5' }}
+                            avatar={
+                                <Avatar alt="Front-End" src={Back_End} className={classes.avatar}/>
+                            }
+                        />
+                        <CardContent>
+                            {back_end_arr.map((element) =>
+                                <div className={classes.chip}>
                                     <Chip
                                         className={classes.chip}
-                                        icon={<BuildIcon />}
+                                        icon={<WbCloudyOutlinedIcon />}
                                         clickable
                                         color="secondary"
                                         label={element}
@@ -108,64 +135,39 @@ const Home = (props) => {
                                         variant='outlined'
                                     /> 
                                 </div>
-                            )}
-                    </CardContent>
-                </Card>
-                <Card className={classes.card}>
-                    <CardHeader 
-                        title="Back-End"
-                        titleTypographyProps={{variant:'h5' }}
-                        avatar={
-                            <Avatar alt="Front-End" src={Back_End} className={classes.avatar}/>
-                        }
-                    />
-                    <CardContent>
-                        {back_end_arr.map((element) =>
-                            <div className={classes.chip}>
-                                <Chip
-                                    className={classes.chip}
-                                    icon={<WbCloudyIcon />}
-                                    clickable
-                                    color="secondary"
-                                    label={element}
-                                    onDelete={handleDelete}
-                                    deleteIcon={<DoneIcon />}
-                                    variant='outlined'
-                                /> 
-                            </div>
-                        )
-                        }
-                    </CardContent>
-                </Card>
-                <Card className={classes.card} style={{marginRight: '100px'}}>
-                    <CardHeader 
-                        title="Others"
-                        titleTypographyProps={{variant:'h5' }}
-                        avatar={
-                            <Avatar alt="others" src={others} className={classes.avatar}/>
-                        }
-                    />
-                    <CardContent>
-                        {others_arr.map((element) =>
-                            <div className={classes.chip}>
-                                <Chip
-                                    className={classes.chip}
-                                    icon={<ThumbUpIcon />}
-                                    clickable
-                                    color="secondary"
-                                    label={element}
-                                    onDelete={handleDelete}
-                                    deleteIcon={<DoneIcon />}
-                                    variant='outlined'
-                                /> 
-                            </div>
-                        )
-                        }
-                    </CardContent>
-                </Card>
+                            )
+                            }
+                        </CardContent>
+                    </Card>
+                    <Card className={classes.card} style={{marginRight: '100px'}}>
+                        <CardHeader 
+                            title="Others"
+                            titleTypographyProps={{variant:'h5' }}
+                            avatar={
+                                <Avatar alt="others" src={others} className={classes.avatar}/>
+                            }
+                        />
+                        <CardContent>
+                            {others_arr.map((element) =>
+                                <div className={classes.chip}>
+                                    <Chip
+                                        className={classes.chip}
+                                        icon={<ThumbUpOutlinedIcon />}
+                                        clickable
+                                        color="secondary"
+                                        label={element}
+                                        onDelete={handleDelete}
+                                        deleteIcon={<DoneIcon />}
+                                        variant='outlined'
+                                    /> 
+                                </div>
+                            )
+                            }
+                        </CardContent>
+                    </Card>
+                </div>
+                <footer> <Links /> </footer>    
             </div>
-            <footer> <Links /> </footer>    
-        </div>
         </MuiThemeProvider>
 
     )

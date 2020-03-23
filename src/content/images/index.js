@@ -8,3 +8,7 @@ export { default as Front_End } from './Front_End.jpeg';
 export { default as Front_End2 } from './Front_End2.png'; 
 export { default as Back_End } from './back-end.png';
 export { default as others } from './others.jpeg';
+export { default as MovieImage } from './projects/movie.jpeg';
+export { default as FoodImage } from './projects/food.jpeg';
+export { default as MusicImage } from './projects/music.jpg';
+export { default as CassandraImage } from './projects/Cassandra.jpg';
