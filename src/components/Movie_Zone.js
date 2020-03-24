@@ -5,7 +5,9 @@ import { Typography, CardMedia, Card, CardHeader, GridList, GridListTile, GridLi
 import { ExpansionPanelSummary, ExpansionPanelDetails, Divider } from '@material-ui/core';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ReactPlayer from 'react-player';
 import { microservices, mainPage, advanceSearch, Paypal1, Paypal2, SearchedData } from '../content/images';
+import Links from './Links';
 
 const useStyles = makeStyles(theme => ({
     homeParent: {
@@ -36,9 +38,6 @@ const useStyles = makeStyles(theme => ({
     },
     media: {
         display: 'flex',
-        // height: 200,
-        // width: 400,
-        // marginTop: 50,
         paddingTop: '56.25%', // 16:9
     },
     stack: {
@@ -75,21 +74,24 @@ const useStyles = makeStyles(theme => ({
     expansion: {
         display: 'flex',
         flexDirection: 'column',
-
-    }
+    },
 
 }));
 const Move_Zone = (props) => {
     const classes = useStyles()
-    const movie_stack = ['Java', 'JQuery', 'HTML/CSS', 'Microservies', 'MySQL']
-    const intro = 'Movie Zone is a school project of the University Of California, Irvine. In the Movie Zone, the user are able to browse most of the movies from 1960 to 2010, do advance search(based on Title, Genre, Year, Director, etc), and manage shopping cart and pay wih the Paypal.'
+    const movie_stack = ['Java', 'JQuery', 'HTML/CSS', 'Microservies', 'MySQL', 'JavaScript']
+    const intro = 'Movie Zone is an online movie shopping website. In the Movie Zone, the user are able to browse most of the movies from 1960 to 2010, do advance search(based on Title, Genre, Year, Director, etc), and manage shopping cart and pay the movie wih the Paypal.'
     const tileData = [{title: 'Microservices', img: microservices}, {title: 'Main Page', img: mainPage}, {title: 'Advance Search', img: advanceSearch}, {title: 'Pay with Paypal1', img: Paypal1}, {title:'Pay with Paypal2', img: Paypal2}, {title: 'Searched Data', img: SearchedData}]
-    const chanllangesAndActions = 'There are three main challanges that I faced during developing: 1. The slow output due to 100,000+ data entries in the database'
+    const chllngAndAct = [
+        {title: 'Too many data entries slowing down the output of Back-End?', sol: 'Solution: Multi-threading', content: 'Using Java to implement a multi-thread program to handle and process different requests at the same time. It ends up by increasing the throughput of the whole Back-End.'},
+        {title: 'The user experience is bad if it takes time to wait?', sol: 'Solution: API Gateway.', content: 'Using API Gateway to store the request from the user and send back Result Code 204 immediately back to user to show that the Back-End is processing instead of showing blank space to user. Once the processing of the data is finished, the Back-End will send the result and data to the Gateway. Using the transaction id to track each request and return the data back to the user. '}, 
+        {title: 'How to build a stable and secure database?', sol: 'Solution: Microservices', content: 'Using the microservices architecture to provide a stable and secure database. There are 4 databases in this system in total. Each database is separated and independent to run and process. Even if one database/server is broken by some reason, the other three databases are still working perfectly fine without losing any data among the three. '}, 
+    ]
     return(
         <div className={classes.homeParent}>
             <div className={classes.homeHead} >
                 <div>
-                <Typography variant="h2" color='primary'> Movie Zone Project </Typography>
+                <Typography variant="h2" color='primary' style={{marginLeft: '60px'}}> Movie Zone Project </Typography>
                 {movie_stack.map((element) => 
                     <Chip
                       className={classes.chip}
@@ -101,10 +103,11 @@ const Move_Zone = (props) => {
                   )}
                 </div>
             </div>
+            <Divider />
             <div className={classes.wrapper}>
                 <div className={classes.flexbox}>
                     <div>
-                    <Typography variant="h2" gutterBottom>Project Introduction</Typography>
+                    <Typography variant="h3" gutterBottom>Project Introduction</Typography>
                     <Typography variant='h6' gutterBottom> {intro} </Typography>
                     </div>
                 </div>
@@ -119,8 +122,8 @@ const Move_Zone = (props) => {
                             title='Movie'
                         />
                         <div className={classes.stack}>
-                            <Typography>Front-End: JQuery, JavaScrpt</Typography>
-                            <Typography>Back-End: Java</Typography>
+                            <Typography>Front-End: JQuery, JavaScript</Typography>
+                            <Typography>Back-End:  Java</Typography>
                             <Typography>Database: MySQL</Typography>
                             <Typography>Architecture: Mricroservices</Typography>
                         </div>
@@ -152,61 +155,36 @@ const Move_Zone = (props) => {
             </div>
             <Divider />
             <div className={classes.chanllangesAndActions}>
-                <Typography variant='h3' style={{margin: '50px'}}>Chanllanges And Actions</Typography>
-                <ExpansionPanel style={{margin: '0 auto'}}>
-                    <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    >
-                    <Typography className={classes.heading}>Too many data entries slowing down the output of Back-End?</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails className={classes.expansion}>
-                        <Typography variant='h4' > Solution: Multi-threading </Typography>
-                        <Typography variant='h6'>
-                            Using Java to implement a multi-thread program to handle and process different requests at the same time.
-                            It ends up by increasing the throughput of the whole Back-End.
-                        </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel>
-                    <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2a-content"
-                    id="panel2a-header"
-                    >
-                        <Typography className={classes.heading}>The user experience is bad if it takes time to wait? </Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails className={classes.expansion}>
-                        <Typography variant='h4' > Solution: API Gateway. </Typography>
-                        <Typography variant='h6'>
-                        Using API Gateway to store the request from the user and send back Result Code 204 immediately back to user
-                        to show that the Back-End is processing instead of showing blank space to user. Once the processing
-                        of the data is finished, the Back-End will send the result and data to the Gateway. Using the transaction id
-                        to track each request and return the data back to the user. 
-                        </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
-                <ExpansionPanel>
-                    <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3a-content"
-                    id="panel3a-header"
-                    >
-                        <Typography className={classes.heading}>How to build a stable and secure database?</Typography>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails className={classes.expansion}>
-                            <Typography variant='h4' > Solution: Microservices </Typography>
-                            <Typography variant='h6'>
-                                Using the microservices architecture to provide a stable and secure database. There are 4 databases
-                                in this system in total. Each database is separated and independent to run and process. Even if one
-                                database/server is broken by some reason, the other three databases are still working perfectly fine 
-                                without losing any data among the three. 
-                            </Typography>
-                    </ExpansionPanelDetails>
-                </ExpansionPanel>
+                <Typography variant='h3' style={{margin: '50px'}}>Challenges And Actions</Typography>
+                {chllngAndAct.map((element) => {
+                    return(
+                        <ExpansionPanel>
+                            <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                            >
+                            <Typography className={classes.heading}>{element.title}</Typography>
+                            </ExpansionPanelSummary>
+                            <ExpansionPanelDetails className={classes.expansion}>
+                                <Typography variant='h4' > {element.sol} </Typography>
+                                <Typography variant='h6'>
+                                    {element.content}
+                                </Typography>
+                            </ExpansionPanelDetails>
+                        </ExpansionPanel>
+                    )
+                })}
             </div>
             <Divider />
+            <div className={classes.wrapper}>
+                <Typography variant='h3' style={{margin: 'auto 0'}} >Video Demo</Typography>
+                <ReactPlayer url='https://youtu.be/7Yc0nqA3Gd0' playing />
+            </div>
+            <Divider />
+            <div style={{margin: '100px auto'}}>
+                <Typography variant='h2'  >Thanks for watching</Typography>
+            </div>
         </div>
     )
 }
