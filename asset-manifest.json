@@ -1,34 +1,40 @@
 {
   "files": {
     "main.css": "/static/css/main.c21865b5.chunk.css",
-    "main.js": "/static/js/main.b11a802c.chunk.js",
-    "main.js.map": "/static/js/main.b11a802c.chunk.js.map",
+    "main.js": "/static/js/main.f04a9330.chunk.js",
+    "main.js.map": "/static/js/main.f04a9330.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a4be3630.js",
     "runtime-main.js.map": "/static/js/runtime-main.a4be3630.js.map",
-    "static/js/2.304bf736.chunk.js": "/static/js/2.304bf736.chunk.js",
-    "static/js/2.304bf736.chunk.js.map": "/static/js/2.304bf736.chunk.js.map",
+    "static/js/2.9e89d7eb.chunk.js": "/static/js/2.9e89d7eb.chunk.js",
+    "static/js/2.9e89d7eb.chunk.js.map": "/static/js/2.9e89d7eb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3c87c293969d1fa8979b2db1188b4b06.js": "/precache-manifest.3c87c293969d1fa8979b2db1188b4b06.js",
+    "precache-manifest.928c4c1f7db80f65b7a5e5d266dd027e.js": "/precache-manifest.928c4c1f7db80f65b7a5e5d266dd027e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c21865b5.chunk.css.map": "/static/css/main.c21865b5.chunk.css.map",
     "static/media/Cassandra.jpg": "/static/media/Cassandra.49118a3c.jpg",
     "static/media/De_anza_transcript.pdf": "/static/media/De_anza_transcript.f6363032.pdf",
+    "static/media/Paypal1.png": "/static/media/Paypal1.71bb2dc5.png",
+    "static/media/Paypal2.png": "/static/media/Paypal2.2a4815bd.png",
     "static/media/Resume_SE.pdf": "/static/media/Resume_SE.15e53f07.pdf",
+    "static/media/SearchedData.png": "/static/media/SearchedData.8e280639.png",
     "static/media/UCI_transcript.pdf": "/static/media/UCI_transcript.9ab4b2ec.pdf",
     "static/media/aboutMePicture.jpg": "/static/media/aboutMePicture.c78ada96.jpg",
+    "static/media/advanceSearch.png": "/static/media/advanceSearch.b048fe2b.png",
     "static/media/food.jpeg": "/static/media/food.b1d68c2d.jpeg",
     "static/media/github.svg": "/static/media/github.617870e4.svg",
     "static/media/gmail.svg": "/static/media/gmail.b986b4fd.svg",
     "static/media/homePicture.jpg": "/static/media/homePicture.362f5d85.jpg",
     "static/media/linkedin.svg": "/static/media/linkedin.619231ff.svg",
+    "static/media/mainPage.png": "/static/media/mainPage.5cb01342.png",
+    "static/media/microservices.png": "/static/media/microservices.e6558ba8.png",
     "static/media/music.jpg": "/static/media/music.161308e1.jpg",
     "static/media/profileImage.png": "/static/media/profileImage.e47ead8e.png",
     "static/media/recommendation.pdf": "/static/media/recommendation.f40d9231.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.a4be3630.js",
-    "static/js/2.304bf736.chunk.js",
+    "static/js/2.9e89d7eb.chunk.js",
     "static/css/main.c21865b5.chunk.css",
-    "static/js/main.b11a802c.chunk.js"
+    "static/js/main.f04a9330.chunk.js"
   ]
 }
