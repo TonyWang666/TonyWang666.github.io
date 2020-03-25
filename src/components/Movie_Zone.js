@@ -7,7 +7,6 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ReactPlayer from 'react-player';
 import { microservices, mainPage, advanceSearch, Paypal1, Paypal2, SearchedData } from '../content/images';
-import Links from './Links';
 
 const useStyles = makeStyles(theme => ({
     homeParent: {
