@@ -65,15 +65,17 @@ const Cassandra_Data_Manager = (props) => {
             <div className={classes.homeHead} >
                 <div>
                 <Typography variant="h2" color='primary'> Cassandra Data Manager </Typography>
-                {cassandra_stack.map((element) => 
-                    <Chip
-                      className={classes.chip}
-                      clickable
-                      color="primary"
-                      label={element}
-                      variant='outlined'
-                    /> 
-                  )}
+                <div style={{marginLeft: '100px'}}>
+                    {cassandra_stack.map((element) => 
+                        <Chip
+                        className={classes.chip}
+                        clickable
+                        color="primary"
+                        label={element}
+                        variant='outlined'
+                        /> 
+                    )}
+                  </div>
                 </div>
             </div>
             <Divider />
@@ -85,7 +87,7 @@ const Cassandra_Data_Manager = (props) => {
                     </div>
                 </div>
                 <div className={classes.flexbox}>
-                    <Card style={{minWidth: '450px'}}>
+                    <Card style={{minWidth: '500px'}}>
                         <CardHeader
                             title="Technology Stack"
                         />
@@ -95,9 +97,9 @@ const Cassandra_Data_Manager = (props) => {
                             title='Cassandra'
                         />
                         <div className={classes.stack}>
-                            <Typography>Front-End: TypeScript, Angular, HTML/CSS</Typography>
-                            <Typography>Back-End:  JavaScript, Node.js, Express, OAuth</Typography>
-                            <Typography>Database: the database of Spotify</Typography>
+                            <Typography>Back-End: Apache Cassandra</Typography>
+                            <Typography>Language Used: CQL</Typography>
+                            <Typography>Data Source: 70,000+ data entries from the Yelp database </Typography>
                         </div>
                     </Card>
                 </div>
