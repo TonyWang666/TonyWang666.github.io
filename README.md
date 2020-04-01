@@ -1,6 +1,6 @@
 # TonyWang666.github.io
 
-# Tony's Porfolio Website: "www.tonywangjs.com"
+# Tony's Porfolio Website: "www.tonywangjx.com"
 
 This website is deployed on the github page with binding on my domain and https support.
 
@@ -8,6 +8,7 @@ CNAME is the file used to bind with my domain.
 
 # How to update website:
 yarn build 
+
 yarn deploy
 
 # Explain
