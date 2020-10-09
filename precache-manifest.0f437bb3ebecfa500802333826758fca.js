@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89461bae2b0a7fe671d9f10764e4decf",
+    "revision": "d33f2dacefcc0c098bff43ca7058c3b3",
     "url": "/index.html"
   },
   {
-    "revision": "5412250f794b5f130a69",
+    "revision": "94b5f0ed72a54d71f640",
     "url": "/static/css/main.c21865b5.chunk.css"
   },
   {
-    "revision": "e622fffe144cf213a781",
-    "url": "/static/js/2.d7a21de5.chunk.js"
+    "revision": "aed38ac3e2296d2c66e8",
+    "url": "/static/js/2.7bb931b2.chunk.js"
   },
   {
-    "revision": "5412250f794b5f130a69",
-    "url": "/static/js/main.1fc25192.chunk.js"
+    "revision": "94b5f0ed72a54d71f640",
+    "url": "/static/js/main.73072b7d.chunk.js"
   },
   {
-    "revision": "7ec41e30773b6ea259c5",
-    "url": "/static/js/runtime-main.1c9ec464.js"
+    "revision": "78d0d04c9800eb27c0fb",
+    "url": "/static/js/runtime-main.3d7820ba.js"
   },
   {
     "revision": "49118a3c3564aba286a419f1a8ce7937",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Paypal2.2a4815bd.png"
   },
   {
-    "revision": "4d33d25022cd2ab61ed857be0f58b57b",
-    "url": "/static/media/Resume_SE.4d33d250.pdf"
+    "revision": "4420bad09ba28c7485fad47b86f1d233",
+    "url": "/static/media/Resume_SE.4420bad0.pdf"
   },
   {
     "revision": "e18d00bd207bb06adefbba3c27abcfac",
@@ -122,5 +122,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f40d9231d380d9f5923c0d46a0f8c34f",
     "url": "/static/media/recommendation.f40d9231.pdf"
+  },
+  {
+    "revision": "cefdaa5b4414bf812482fd41251856c9",
+    "url": "/static/media/简历-软工-小.cefdaa5b.pdf"
   }
 ]);

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c21865b5.chunk.css",
-    "main.js": "/static/js/main.1fc25192.chunk.js",
-    "main.js.map": "/static/js/main.1fc25192.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1c9ec464.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1c9ec464.js.map",
-    "static/js/2.d7a21de5.chunk.js": "/static/js/2.d7a21de5.chunk.js",
-    "static/js/2.d7a21de5.chunk.js.map": "/static/js/2.d7a21de5.chunk.js.map",
+    "main.js": "/static/js/main.73072b7d.chunk.js",
+    "main.js.map": "/static/js/main.73072b7d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3d7820ba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3d7820ba.js.map",
+    "static/js/2.7bb931b2.chunk.js": "/static/js/2.7bb931b2.chunk.js",
+    "static/js/2.7bb931b2.chunk.js.map": "/static/js/2.7bb931b2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.53673be28ac312f1623f38adfd04fff0.js": "/precache-manifest.53673be28ac312f1623f38adfd04fff0.js",
+    "precache-manifest.0f437bb3ebecfa500802333826758fca.js": "/precache-manifest.0f437bb3ebecfa500802333826758fca.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c21865b5.chunk.css.map": "/static/css/main.c21865b5.chunk.css.map",
     "static/media/Cassandra.jpg": "/static/media/Cassandra.49118a3c.jpg",
@@ -16,7 +16,7 @@
     "static/media/Like.png": "/static/media/Like.fb5e75bd.png",
     "static/media/Paypal1.png": "/static/media/Paypal1.71bb2dc5.png",
     "static/media/Paypal2.png": "/static/media/Paypal2.2a4815bd.png",
-    "static/media/Resume_SE.pdf": "/static/media/Resume_SE.4d33d250.pdf",
+    "static/media/Resume_SE.pdf": "/static/media/Resume_SE.4420bad0.pdf",
     "static/media/SearchResult.png": "/static/media/SearchResult.e18d00bd.png",
     "static/media/SearchedData.png": "/static/media/SearchedData.8e280639.png",
     "static/media/SearchingMexican.png": "/static/media/SearchingMexican.cfc6bff6.png",
@@ -36,12 +36,13 @@
     "static/media/music.jpg": "/static/media/music.161308e1.jpg",
     "static/media/profileImage.png": "/static/media/profileImage.e47ead8e.png",
     "static/media/recommend.png": "/static/media/recommend.c1bd0e78.png",
-    "static/media/recommendation.pdf": "/static/media/recommendation.f40d9231.pdf"
+    "static/media/recommendation.pdf": "/static/media/recommendation.f40d9231.pdf",
+    "static/media/简历-软工-小.pdf": "/static/media/简历-软工-小.cefdaa5b.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.1c9ec464.js",
-    "static/js/2.d7a21de5.chunk.js",
+    "static/js/runtime-main.3d7820ba.js",
+    "static/js/2.7bb931b2.chunk.js",
     "static/css/main.c21865b5.chunk.css",
-    "static/js/main.1fc25192.chunk.js"
+    "static/js/main.73072b7d.chunk.js"
   ]
 }
