@@ -1,10 +1,11 @@
 import React, { Fragment, useState }from "react";
-import {resume, de_anza_transcript, recommendation, UCI_transcript} from "../content/documents"
+import {resume_chinese, resume, de_anza_transcript, recommendation, UCI_transcript} from "../content/documents"
 import { Select, MenuItem, FormControl, InputLabel, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Links } from "../components";
 
 const options = [
+  { data: resume_chinese, label: '简历'},
   { data: resume, label: 'Resume' },
   { data: recommendation, label: 'Recommendation' },
   { data: UCI_transcript, label: 'Transcript of University Of California, Irvine' },
@@ -62,7 +63,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Resume = (props) => {
-  const [doc, setDoc] = useState(resume);
+  const [doc, setDoc] = useState(resume_chinese);
   const classes = useStyles();
   return(
       <Fragment>

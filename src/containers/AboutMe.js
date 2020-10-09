@@ -11,13 +11,13 @@ const AboutMe = () => (
         <div className="split right text">
             <Typography variant="h5">
                 <Box fontWeight="fontWeightBold">
-                    Hi! This is Jiaxiang Wang. You can just call me Tony. I am a full-stack developer and currently studying in University Of California, Irvine.
+                    Hi! This is Jiaxiang Wang. You can just call me Tony.
                     Welcom to My Portfolia.
                 </Box>
                 <br />
                 <Box>
-                    I am currently computer science major student in University of California, Irvine. 
-                    My expected gradutating time is June 2020.
+                    I am currently a full-stack engineer at Roblox China(罗布乐思/Luobulesi).
+                    I graduated from the University of California, Irvine with computer science major in June 2020. 
                     I have 2 years work experience before and familiar with the front-end and back-end developing.
                 </Box>
             </Typography>

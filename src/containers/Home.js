@@ -4,11 +4,8 @@ import { Avatar, Typography, Card, CardHeader, Divider, CardContent, Chip } from
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import lightBlue from '@material-ui/core/colors/lightBlue';
 import DoneIcon from '@material-ui/icons/Done';
-// import BuildIcon from '@material-ui/icons/Build';
 import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
-// import WbCloudyIcon from '@material-ui/icons/WbCloudy';
 import WbCloudyOutlinedIcon from '@material-ui/icons/WbCloudyOutlined';
-// import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ThumbUpOutlinedIcon from '@material-ui/icons/ThumbUpOutlined';
 import { makeStyles } from '@material-ui/core/styles';
 import { Links } from "../components";
@@ -46,7 +43,6 @@ const useStyles = makeStyles(theme => ({
     },
     card: {
         width: 350,
-        // margin: '0 100px',
     },
     chip: {
         margin: '4px 1px',   
@@ -79,9 +75,9 @@ const Home = (props) => {
                         <div className={classes.intro}>
                             <Typography variant="h5" color='primary'>Hi, this is </Typography>
                             <Typography variant="h1" color='primary' gutterBottom>Tony Wang</Typography>
-                            <Typography variant="h5" color='primary' gutterBottom>I am a fourth year undergrad at the University Of California, Irvine.</Typography>
+                            <Typography variant="h5" color='primary' gutterBottom>I am currently a full-stack engineer at Roblox China(罗布乐思/Luobulesi).</Typography>
                             <br />
-                            <Typography variant="h5" color='primary' gutterBottom>I am actively looking for full-time software engineer position starting from June 2020.</Typography>
+                            <Typography variant="h5" color='primary' gutterBottom>I graduated from the University of California, Irvine with computer science major in June 2020.</Typography>
                             <br />
                             <Typography variant="h5" color='primary' gutterBottom>Nice to meet you and below are my expertises: </Typography>
                         </div> 
